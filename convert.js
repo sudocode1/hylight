@@ -32,7 +32,13 @@ const dothis = string => {
         return `<sup>${string.slice(4)}</sup>`;
     } else if(string.startsWith("br") || string.startsWith("break")) {
         return `<br />`;
-    } 
+    } else if(string.startsWith("audio(ogg)")) {
+        return `<audio controls>\n<source src="${string.slice(11)}" type="audio/ogg">\n</audio><br />`;
+    } else if(string.startsWith("audio(mp3)")) {
+        return `<audio controls>\n<source src="${string.slice(11)}" type="audio/mpeg">\n</audio><br />`;
+    } else if(string.startsWith("bdo")) {
+        return `<bdo dir="rtl">${string.slice(4)}</bdo>`;
+    }
 };
 
 fs.writeFileSync("index.html", `<html>\n<body>\n` + s.map(dothis).join('\n') + "\n</body>\n</html>");
