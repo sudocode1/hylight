@@ -1,6 +1,7 @@
 const fs = require("fs");
 var toRead = "./index.hyl";
 
+
 var read = fs.readFileSync(toRead).toString();
 var s = read.split('\r\n')
 
@@ -43,5 +44,5 @@ const dothis = string => {
     }
 };
 
-fs.writeFileSync("index.html", `<html>\n<body>\n` + s.map(dothis).join('\n') + "\n</body>\n</html>");
+fs.writeFileSync("index.html", `<html>\n<body>\n<font face="Helvetica">\n` + s.map(dothis).join('\n') + "\n</font>\n</body>\n</html>");
 dothis(s[0])
