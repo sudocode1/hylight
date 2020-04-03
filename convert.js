@@ -38,6 +38,8 @@ const dothis = string => {
         return `<audio controls>\n<source src="${string.slice(11)}" type="audio/mpeg">\n</audio><br />`;
     } else if(string.startsWith("bdo")) {
         return `<bdo dir="rtl">${string.slice(4)}</bdo>`;
+    } else if(string.startsWith("iframe")){
+        return `<iframe src="${string.slice(7)}"></iframe>`
     }
 };
 
