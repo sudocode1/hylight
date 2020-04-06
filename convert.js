@@ -1,4 +1,5 @@
 const fs = require("fs");
+const mam = require("more-array-methods");
 var toRead = "./index.hyl";
 
 
@@ -45,6 +46,8 @@ const dothis = string => {
         return `<bdi>${string.slice(4)}</bdi>`;
     } else if(string.startsWith("video")) {
         return `<video controls>\n<source src="${string.slice(6)}">\n</video>`;
+    } else if(string.startsWith("alert")) {
+        return `<script>alert("${string.slice(6)}")</script>`;
     }
 };
 

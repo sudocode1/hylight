@@ -1,0 +1,29 @@
+{
+  "name": "hylight",
+  "version": "1.4.1",
+  "description": "simple html",
+  "main": "convert.js",
+  "scripts": {
+    "test": "node convert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudocode1/hylight.git"
+  },
+  "keywords": [
+    "hylight",
+    "hy",
+    "simple",
+    "html"
+  ],
+  "author": "sudocode1",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sudocode1/hylight/issues"
+  },
+  "homepage": "https://github.com/sudocode1/hylight#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "more-array-methods": "^1.1.2"
+  }
+}
