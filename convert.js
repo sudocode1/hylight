@@ -41,6 +41,10 @@ const dothis = string => {
         return `<bdo dir="rtl">${string.slice(4)}</bdo>`;
     } else if(string.startsWith("iframe")){
         return `<iframe src="${string.slice(7)}"></iframe>`
+    } else if(string.startsWith("bdi")){
+        return `<bdi>${string.slice(4)}</bdi>`;
+    } else if(string.startsWith("video")) {
+        return `<video controls>\n<source src="${string.slice(6)}">\n</video>`;
     }
 };
 
