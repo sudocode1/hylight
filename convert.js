@@ -51,5 +51,5 @@ const dothis = string => {
     }
 };
 
-fs.writeFileSync("index.html", `<html>\n<body>\n<font face="Helvetica">\n` + s.map(dothis).join('\n') + "\n</font>\n</body>\n</html>");
+fs.writeFileSync("index.html", `<!--built with hylight-->\n<html>\n<head>\n<link rel="stylesheet" src="styles.css">\n<\head>\n<body>\n<font face="Helvetica">\n` + s.map(dothis).join('\n') + "\n</font>\n</body>\n</html>");
 dothis(s[0])
