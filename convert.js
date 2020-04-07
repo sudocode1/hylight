@@ -50,7 +50,7 @@ const dothis = string => {
         return `<script>alert("${string.slice(6)}")</script>`;
     } else if(string.startsWith("comment")) {
         return `<!--${string.slice(8)-->`;
-    }
+    } else return ``;
 };
 
 fs.writeFileSync("index.html", `<!DOCTYPE html>\n<!--built with hylight-->\n<html>\n<head>\n<link rel="stylesheet" src="styles.css">\n<\head>\n<body>\n` + s.map(dothis).join('\n') + "\n</font>\n</body>\n</html>");
