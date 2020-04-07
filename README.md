@@ -1,2 +1,2 @@
-# hylight
-the simplest programming language ever
+# Hylight
+The simplest programming language ever.
