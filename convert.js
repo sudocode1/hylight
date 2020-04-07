@@ -2,9 +2,8 @@ const fs = require("fs");
 const mam = require("more-array-methods");
 var toRead = "./index.hyl";
 
-
 var read = fs.readFileSync(toRead).toString();
-var s = read.split('\r\n')
+var s = read.split('\n')
 
 console.log(s);
 var font;
