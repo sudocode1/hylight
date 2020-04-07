@@ -1,6 +1,6 @@
 {
   "name": "hylight",
-  "version": "1.4.1",
+  "version": "1.5",
   "description": "simple html",
   "main": "convert.js",
   "scripts": {
