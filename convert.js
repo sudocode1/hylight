@@ -48,6 +48,8 @@ const dothis = string => {
         return `<video controls>\n<source src="${string.slice(6)}">\n</video>`;
     } else if(string.startsWith("alert")) {
         return `<script>alert("${string.slice(6)}")</script>`;
+    } else if(string.startsWith("comment")) {
+        return `<!--${string.slice(8)-->
     }
 };
 
