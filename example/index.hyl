@@ -30,8 +30,10 @@ iframe https://youtube.com
 br
 video ./video.mp4
 break
-bdi ¿This text contains international characters!
+ltr هذا النص من اليسار إلى اليمين
 br
-alert This is an alert
+rtl This text is right to left
 break
+alert This is an alert
+br
 comment This is a comment
