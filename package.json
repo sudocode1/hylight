@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/sudocode1/hylight#readme",
   "dependencies": {
-    "fs": "0.0.1-security",
     "more-array-methods": "^1.1.2"
   }
 }
