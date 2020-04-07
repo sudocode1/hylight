@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/sudocode1/hylight/issues"
   },
-  "homepage": "https://github.com/sudocode1/hylight#readme",
+  "homepage": "https://github.com/sudocode1/hylight/blob/master/README.md",
   "dependencies": {
     "more-array-methods": "^1.1.2"
   }
