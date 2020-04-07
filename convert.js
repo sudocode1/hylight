@@ -49,7 +49,7 @@ const dothis = string => {
     } else if(string.startsWith("alert")) {
         return `<script>alert("${string.slice(6)}")</script>`;
     } else if(string.startsWith("comment")) {
-        return `<!--${string.slice(8)-->
+        return `<!--${string.slice(8)-->`;
     }
 };
 
