@@ -1,0 +1,37 @@
+h1 This is heading 1
+br
+h2 This is heading 2
+break
+h3 This is heading 3
+br
+h4 This is heading 4
+break
+h5 This is heading 5
+br
+h6 This is heading 6
+break
+p This is a paragraph
+br
+image https://i.gyazo.com/19abb0034d17d393740e4bdc0accb443.png
+break
+sub This is a subscript
+br
+sup This is a superscript
+break
+p Lorem ipsum
+br
+audio(mp3) ./audio.mp3
+break
+audio(ogg) ./audio.ogg
+br
+bdo This text is right to left
+break
+iframe https://youtube.com
+br
+video ./video.mp4
+break
+bdi ¿This text contains international characters!
+br
+alert This is an alert
+break
+comment This is a comment
